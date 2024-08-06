@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nivtec Színpad Kalkulátor</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+  <div class="container">
+    <img src="logo.png" alt="logo">
+    <h1>Nivtec Színpad Kalkulátor</h1>
+
+    <div class="input-group">
+      <label for="length">Színpad szélessége (méterben):</label>
+      <input type="number" id="length" placeholder="Például: 6">
+      <div id="length-error" class="error-message">Kérlek adj meg érvényes szélességet!</div>
+    </div>
+
+    <div class="input-group">
+      <label for="width">Színpad mélysége (méterben):</label>
+      <input type="number" id="width" placeholder="Például: 4">
+      <div id="width-error" class="error-message">Kérlek adj meg érvényes mélységet!</div>
+    </div>
+
+    <div class="rotate-group">
+        <label for="rotate-checkbox">
+            Forgatás
+            <input type="checkbox" id="rotate-checkbox">
+        </label>
+    </div>
+
+    <button onclick="calculate()">Számítás</button>
+    <div class="result" id="result"></div>
+    <div class="stage-diagram" id="diagram"></div>
+    <div class="copyright">
+      Made by Danci - 2024
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
+
